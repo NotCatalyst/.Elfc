@@ -1,0 +1,1650 @@
+[Icons]
+Name: Paladin Haste
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 haste
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -30
+Text: Haste
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -30
+Text: Haste
+TextColor: 255
+HoverColor: 255
+
+Name: *
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -450
+Text:     ~~~~~ 4Vocs Section ~~~~~
+TextColor: 16776960
+HoverColor: 0
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Absolute
+PositionY: 0
+Text: 
+TextColor: 0
+HoverColor: 0
+
+Name: Exori Con Target
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 300 isattacking say 'exori con'
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3277 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -30
+Text:  Con
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3277 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -30
+Text:  Con
+TextColor: 255
+HoverColor: 255
+
+Name: Exori San Target
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 300 isattacking say 'exori san'
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7367 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -30
+Text:  San
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7367 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -30
+Text:  San
+TextColor: 255
+HoverColor: 255
+
+Name: Exevo mas san if 3 creatures + 
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas ‘Exevo mas san 3 creatures + No players’ | if [$monstersaround.1 >= 3 && $playersaround.6 == 0] say exevo mas san
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 6561 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -30
+Text: MSan
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 6561 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -30
+Text: MSan
+TextColor: 255
+HoverColor: 255
+
+Name: Healing
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 listas 'Exura gran / San' | if [$hppc =< 90] {say 'Exura gran'} | if [$hppc =< 70] {say 'exura san'}
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3022 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -30
+Text: Heal
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3022 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -30
+Text: Heal
+TextColor: 255
+HoverColor: 255
+
+Name: GSP 30% MP
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GSP 30% MP' | if [$mppc =< 30] useoncreature 7642 self  
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -110
+Text: 30Mp
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -110
+Text: 30Mp
+TextColor: 255
+HoverColor: 255
+
+Name: GSP 50% MP
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GSP 50% MP' | if [$mppc =< 50] useoncreature 7642 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -110
+Text: 50Mp
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -110
+Text: 50Mp
+TextColor: 255
+HoverColor: 255
+
+Name: GSP 70% MP
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GSP 70% MP' | if [$mppc =< 70] useoncreature 7642 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -110
+Text: 70Mp
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -110
+Text: 70Mp
+TextColor: 255
+HoverColor: 255
+
+Name: GSP 30% HP
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GSP 30% HP' | if [$hppc =< 30] useoncreature 7642 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -70
+Text: 30Hp
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -70
+Text: 30Hp
+TextColor: 255
+HoverColor: 255
+
+Name: GSP 50% HP
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GSP 50% HP' | if [$hppc =< 50] useoncreature 7642 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -70
+Text: 50Hp
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -70
+Text: 50Hp
+TextColor: 255
+HoverColor: 255
+
+Name: GSP 70% HP
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GSP 50% HP' | if [$hppc =< 70] useoncreature 7642 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -70
+Text: 70Hp
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7642 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -70
+Text: 70Hp
+TextColor: 255
+HoverColor: 255
+
+Name: SMP 30% 
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'SMP 30%' | if [$mppc =< 30] useoncreature 237 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -110
+Text:  30%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -115
+Text:  30%
+TextColor: 255
+HoverColor: 255
+
+Name: SMP 50%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'SMP 50%' | if [$mppc =< 50] useoncreature 237 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -110
+Text:  50%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -115
+Text:  50%
+TextColor: 255
+HoverColor: 255
+
+Name: SMP 70%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'SMP 70%' | if [$mppc =< 70] useoncreature 237 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -70
+Text:  70%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -70
+Text:  70%
+TextColor: 255
+HoverColor: 255
+
+Name: SMP 90%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'SMP 70%' | if [$mppc =< 90] useoncreature 237 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -70
+Text:  90%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 237 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -70
+Text:  90%
+TextColor: 255
+HoverColor: 255
+
+Name: Stronghaste
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 stronghaste
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -170
+Text: GhuR
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -170
+Text: GhuR
+TextColor: 255
+HoverColor: 255
+
+Name: SD Target
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 300 sd target
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3155 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -170
+Text:   SD
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3155 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -170
+Text:   SD
+TextColor: 255
+HoverColor: 255
+
+Name: Energy Ring If HP > 55%. / Myst
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'ERing + Mysterious Ring.' |  if [$hppc < 55] {equipring 3051} | if [$hppc > 71] {equipring 3024}
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3051 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -170
+Text: ERing
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3051 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -170
+Text: ERing
+TextColor: 255
+HoverColor: 255
+
+Name: Exura gran 85% + Exura vita 50%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 listas 'Exura gran / Vita' | if [$hppc =< 85] {say 'Exura gran'} | if [$hppc =< 40] {say 'exura vita'}
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3249 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -170
+Text:  Heal
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3249 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -170
+Text:  Heal
+TextColor: 255
+HoverColor: 255
+
+Name: Exevo gran mas frigo 3 creature
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas ‘Exevo gran mas frigo 3 creatures + No players’ | if [$monstersaround.1 >= 3 && $playersaround.6 == 0] say exevo gran mas frigo
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 942 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -170
+Text: edUE
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 942 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -170
+Text: edUE
+TextColor: 255
+HoverColor: 255
+
+Name: Exevo gran mas vis 3 creatures 
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas ‘Exevo gran mas vis 3 creatures + No players’ | if [$monstersaround.1 >= 3 && $playersaround.6 == 0] say exevo gran mas vis
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 2126 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -210
+Text: msUE
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 2126 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -210
+Text: msUE
+TextColor: 255
+HoverColor: 255
+
+Name: GMP 30%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GMP 30%' | if [$mppc =< 30] useoncreature 238 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -210
+Text:  30%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -210
+Text:  30%
+TextColor: 255
+HoverColor: 0
+
+Name: GMP 50%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GMP 50%' | if [$mppc =< 50] useoncreature 238 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -210
+Text:  50%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -210
+Text:  50%
+TextColor: 255
+HoverColor: 255
+
+Name: GMP 70%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GMP 70%' | if [$mppc =< 70] useoncreature 238 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -210
+Text:  70%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -210
+Text:  70%
+TextColor: 255
+HoverColor: 255
+
+Name: GMP 90%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'GMP 90%' | if [$mppc =< 90] useoncreature 238 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -210
+Text:  90%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 238 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -210
+Text:  90%
+TextColor: 255
+HoverColor: 255
+
+Name: Haste
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 haste
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -265
+Text: Haste
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3079 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -265
+Text: Haste
+TextColor: 255
+HoverColor: 255
+
+Name: Charge
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 charge
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3254 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -265
+Text:  Chge
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3254 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -265
+Text:  Chrge
+TextColor: 255
+HoverColor: 255
+
+Name: Exori Hur Target
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 300 isattacking say 'exori hur'
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 9396 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -265
+Text:  HuR
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 9396 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -265
+Text:  HuR
+TextColor: 255
+HoverColor: 255
+
+Name: Exana Mort
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 listas 'Exana mort 80%' | if [$hppc =< 80] {say 'Exana mort'} 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3036 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -265
+Text:  Heal
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3036 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -265
+Text:  Heal
+TextColor: 255
+HoverColor: 255
+
+Name: Exori Gran 3 creatures
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas ‘Exori Gran 3 creatures + No players’ | if [$monstersaround.1 >= 3 && $playersaround.6 == 0] say exori gran
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 8103 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -265
+Text: Egrn
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 8103 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -265
+Text: Egrn
+TextColor: 255
+HoverColor: 255
+
+Name: UHP 30%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'UHP 30%' | if [$hppc =< 30] useoncreature 7643 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -305
+Text:   30%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -305
+Text:   30%
+TextColor: 255
+HoverColor: 255
+
+Name: UHP 50%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'UHP 50%' | if [$hppc =< 50] useoncreature 7643 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -305
+Text:   50%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -305
+Text:   50%
+TextColor: 255
+HoverColor: 255
+
+Name: UHP 70%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'UHP 70%' | if [$hppc =< 70] useoncreature 7643 self 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -305
+Text:   70%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 7643 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -305
+Text:   70%
+TextColor: 255
+HoverColor: 255
+
+Name: MP 30%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'MP 30%' | if [$mppc =< 30] useoncreature 268 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 268 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -305
+Text:   30%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 268 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -305
+Text:   30%
+TextColor: 255
+HoverColor: 255
+
+Name: MP 60%
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 100 listas 'MP 30%' | if [$mppc =< 60] useoncreature 268 self
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 268 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -305
+Text:   60%
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 268 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -305
+Text:   60%
+TextColor: 255
+HoverColor: 255
+
+Name: EatFood
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 25000 eatfood
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3725 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -370
+Text:  Food
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3725 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -370
+Text:  Food
+TextColor: 255
+HoverColor: 255
+
+Name: GPS To PLATS
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 listas 'Gold coin - platinum coin' | stackitems | if [ $itemcount.3031 >= 100 ] equipbelt 3031 | if [$beltslot.id == 3031 && $beltslot.count == 100] useitem 3031
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3031 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -370
+Text: GPPL
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3031 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -370
+Text: GPPL
+TextColor: 255
+HoverColor: 255
+
+Name: PLATS To CC
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 listas 'platinum coin- Crystalcoins' | stackitems | if [ $itemcount.3035 >= 100 ] equipbelt 3035 | if ?$beltslot.id == 3035 && $beltslot.count == 100] useitem 3035 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 3035 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -370
+Text: PLCC
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 3035 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -370
+Text: PLCC
+TextColor: 255
+HoverColor: 255
+
+Name: Alarm if attacked.
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 500 ifplayerattacking { flash | playsound monster.wav}
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 5786 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -370
+Text: Alarm
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 5786 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -370
+Text: Alarm
+TextColor: 255
+HoverColor: 255
+
+Name: Mana Train
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 listas 'Mana Trainer' | if [$mppc >= 98] say exura vita 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 8822 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -370
+Text: Train
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 8822 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -370
+Text: Train
+TextColor: 255
+HoverColor: 255
+
+Name: Stop Cavebot/Targeting
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: if $playing {set $playing 0 | statusmessage 'ElfBot NG - CaveBot Paused' | settargeting off | setfollowwaypoints off | stopattack | end} else {set $playing 1 | statusmessage 'ElfBot NG - CaveBot Resumed' | settargeting on | setfollowwaypoints on}
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 8646 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -405
+Text: Stop
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 8646 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -405
+Text: Stop
+TextColor: 255
+HoverColor: 255
+
+Name: Switch Softs
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 equipboots 6529
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 6529 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -405
+Text: Soft
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 6530 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -215
+AlignY: Bottom
+PositionY: -405
+Text: Soft
+TextColor: 255
+HoverColor: 255
+
+Name: Repair Softs
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 1000 listas 'Repair SoftBoots' | if [$itemcount.6530== 1] { say !softboots }
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 6530 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -405
+Text: Rpair
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 6530 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -180
+AlignY: Bottom
+PositionY: -405
+Text: Rpair
+TextColor: 255
+HoverColor: 255
+
+Name: Drop Vials (25)
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 if [ $itemcount.285 >= 25 ] dropitems 285 | wait 100 | if [ $itemcount.284 >= 25 ] dropitems 284 | wait 100 | if [ $itemcount.283 >= 25 ] dropitems 283
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 284 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -405
+Text: Drop
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 284 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -145
+AlignY: Bottom
+PositionY: -405
+Text: Drop
+TextColor: 255
+HoverColor: 255
+
+Name: Hold Target
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: auto 200 attack target
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 8152 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -405
+Text:  Hold
+TextColor: 4259584
+HoverColor: 4259584
+
+State: Active
+IconType: Normal
+IconIds: 8152 0 0 0
+BkgType: Normal
+BkgIds: 10145 0 0 0
+AlignX: Left
+PositionX: -110
+AlignY: Bottom
+PositionY: -405
+Text:  Hold
+TextColor: 255
+HoverColor: 255
+
+Name: Flying
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 323
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -150
+Text:     ~~~~~ RP Section ~~~~~
+TextColor: 16776960
+HoverColor: 0
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Absolute
+PositionY: 0
+Text: 
+TextColor: 0
+HoverColor: 0
+
+Name: Flying2
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 677
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -345
+Text:     ~~~~~ EK Section ~~~~~
+TextColor: 16776960
+HoverColor: 0
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Absolute
+PositionY: 0
+Text: 
+TextColor: 0
+HoverColor: 0
+
+Name: Flying3
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 565
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Bottom
+PositionY: -250
+Text:     ~~~~~ Mage Section ~~~~~
+TextColor: 16776960
+HoverColor: 0
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Absolute
+PositionY: 0
+Text: 
+TextColor: 0
+HoverColor: 0
+
+Name: Flying4
+Enabled: yes
+DrawAsBackground: no
+Size: Small
+LeftCommand: 
+RightCommand: 
+
+State: Inactive
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Left
+PositionX: 0
+AlignY: Top
+PositionY: -20
+Text: Nerd Icons<3
+TextColor: 12615935
+HoverColor: 0
+
+State: Active
+IconType: Normal
+IconIds: 0 0 0 0
+BkgType: Normal
+BkgIds: 0 0 0 0
+AlignX: Absolute
+PositionX: 0
+AlignY: Absolute
+PositionY: 0
+Text: 
+TextColor: 0
+HoverColor: 0
