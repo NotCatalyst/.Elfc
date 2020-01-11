@@ -1,0 +1,34 @@
+Number 1
+if [$hotkeys == 0] {movesw dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz [$target.posx-1] [$target.posy+1] $target.posz}
+
+
+Number 2
+if [$ctrl && $hotkeys == 0] {usegroundxyz $posx [$posy+6] $posz | end} | else {if [$hotkeys == 0] {moves dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz $target.posx [$target.posy+1] $target.posz}}
+
+
+Number 3
+if [$hotkeys == 0] {movese dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz [$target.posx+1] [$target.posy+1] $target.posz}
+
+
+Number 4
+if [$ctrl && $hotkeys == 0] {usegroundxyz [$posx-6] $posy $posz | end} | else {if [$hotkeys == 0] {movew dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz [$target.posx-1] [$target.posy] $target.posz}}
+
+
+Number 5
+if [$hotkeys == 0] {statusmessage 'Pushmax ON' | set $hotkeys 1  | wait 400 | end} | if [$hotkeys == 1] {statusmessage 'Dash ON' | set $hotkeys 0  | wait 400 | end}
+
+
+Number 6
+if [$ctrl && $hotkeys == 0] {usegroundxyz [$posx+6] $posy $posz | end} | else {if [$hotkeys == 0] {movee dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground [$target.posx] [$target.posy] [$target.posz] [$target.posx+1] [$target.posy] [$target.posz]}}
+
+
+Number 7
+if [$hotkeys == 0] {movenw dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz [$target.posx-1] [$target.posy-1] $target.posz}
+
+
+Number 8
+if [$ctrl && $hotkeys == 0] {usegroundxyz $posx [$posy-6] $posz | end} | else {if [$hotkeys == 0] {moven dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz $target.posx [$target.posy-1] $target.posz}}
+
+
+Number 9
+if [$hotkeys == 0] {movene dash 10} | if [$hotkeys == 1] {loop 1 moveitemonground $target.posx $target.posy $target.posz [$target.posx+1] [$target.posy-1] $target.posz}
