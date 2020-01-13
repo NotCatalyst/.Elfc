@@ -1,1 +1,1 @@
-* Welcome to my elfbot repo.
+* If you're here, you suck at tibia.
